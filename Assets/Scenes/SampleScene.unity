@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d36c06ba48623249911dfc12b28377b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torque: 1
+  torque: 100
   rb: {fileID: 0}
 --- !u!1 &381927232
 GameObject:
