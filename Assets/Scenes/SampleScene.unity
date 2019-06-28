@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 343999046}
   - component: {fileID: 343999047}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,7 +171,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4a34b418c7620554d9c95b02e02121e5, type: 2}
+  - {fileID: 2100000, guid: e6bcedbcf869b8848973196456fca571, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -209,10 +209,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.2456195, y: 5.57, z: -103.94803}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 963194228}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &343999046
 Rigidbody:
@@ -242,8 +241,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d36c06ba48623249911dfc12b28377b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  angle: 0
+  rotationSpeed: 100
+  cameraOffset: {x: 0, y: 1, z: -2}
   torque: 100
-  rb: {fileID: 0}
 --- !u!1 &381927232
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,7 +262,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!65 &381927233
 BoxCollider:
@@ -293,7 +294,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4a34b418c7620554d9c95b02e02121e5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -333,7 +334,7 @@ Transform:
   m_LocalScale: {x: 2.5976, y: 2.5976, z: 2.5976}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -29.418001, y: 0, z: 0}
 --- !u!1 &383506515
 GameObject:
@@ -352,7 +353,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!65 &383506516
 BoxCollider:
@@ -594,9 +595,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.724, z: -1.643}
+  m_LocalPosition: {x: -2.2456195, y: 6.294, z: -105.59103}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 343999045}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
