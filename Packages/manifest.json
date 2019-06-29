@@ -3,6 +3,7 @@
     "com.unity.burst": "1.0.4",
     "com.unity.mathematics": "1.0.1",
     "com.unity.package-manager-ui": "2.1.2",
+    "com.unity.postprocessing": "2.1.7",
     "com.unity.render-pipelines.core": "5.7.2",
     "com.unity.render-pipelines.lightweight": "5.7.2",
     "com.unity.shadergraph": "5.7.2",
