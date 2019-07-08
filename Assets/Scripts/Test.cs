@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using Mirror;
 
-public class Test : MonoBehaviour
+public class Test : NetworkBehaviour
 {
     public float angle = 0.0f;
     public float rotationSpeed = 100.0f;
@@ -22,6 +21,11 @@ public class Test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isLocalPlayer)
+        {
+            return;
+        }
+
         var cameraLocalPos = Quaternion.AngleAxis(angle, Vector3.up) * cameraOffset;
 
         if (gameCamera != null)
